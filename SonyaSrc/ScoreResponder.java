@@ -26,6 +26,7 @@ public class ScoreResponder {
 	}
 
 	// Compares the service category of the responder and the client and scores close matches highest
+	// CHANGE LITERALLY ALL OF THIS TO TAKE DATA FROM THE DATABASE
 	private int serviceCategory() {
 		int count = 0;
 		if (client.service.getValue().equals(responder.service.getValue())) {

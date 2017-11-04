@@ -20,8 +20,6 @@ public class Creator {
 		 * - Any edited fields are edited in database
 		 * 
 		 * - String alias, int age, Service service, String location, Gender.getValue gender
-		 *
-		 * - set value of Gender
 		 * 
 		 */
 	}
@@ -30,4 +28,5 @@ public class Creator {
 			boolean other, String Other) {
 		//Insert MySql to insert these values
 	}
+	
 }

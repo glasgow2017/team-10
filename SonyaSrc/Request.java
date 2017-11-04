@@ -1,6 +1,7 @@
 
 public class Request {
 	int timescale;
+	String responderID;
 	String user;
 	boolean mentalHealth;
 	boolean physicalHealth;

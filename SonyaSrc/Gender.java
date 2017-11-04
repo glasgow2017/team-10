@@ -1,6 +1,6 @@
 
 public enum Gender {
-	FEMALE("Female"), MALE("Male"), NA("N/A"); //set Enum for gender
+	FEMALE("Female"), MALE("Male"), NA("N/A");
 	private final String value;
 
 	private Gender(final String value) {
@@ -9,5 +9,5 @@ public enum Gender {
 
 	public String getValue() {
 		return value;
-	} //returns gender
+	}
 }
