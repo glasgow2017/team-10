@@ -1,16 +1,16 @@
 
 public class Creator {
 	
-	public void clientCreator(){
+	public void clientCreator(String notes, boolean yourself, String alias, int age, Service service, String location, Gender gender){
 		// Generate unique id from android identifier and generate a database entry for it
 		/**
 		 * Shove the following into the responder database using the android identifier
 		 * String notes, boolean yourself
 		**/
-		//userCreator(id);
+		//userCreator(id, String alias, int age, Service service, String location, Gender gender);
 	}
 	
-	public void userCreator(int id) {
+	public void userCreator(int id, String alias, int age, Service service, String location, Gender gender) {
 		/**   
 		 * 
 		 * - Connect to database and create new user with unique android identifier
@@ -19,7 +19,7 @@ public class Creator {
 		 * 
 		 * - Any edited fields are edited in database
 		 * 
-		 * String alias, int age, Service service, String location, Gender gender
+		 * - String alias, int age, Service service, String location, Gender.getValue gender
 		 * 
 		 */
 	}
