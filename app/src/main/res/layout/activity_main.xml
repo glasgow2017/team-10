@@ -28,7 +28,6 @@
             android:layout_height="match_parent">
 
 
-
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="228dp"
@@ -104,6 +103,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextColor="@color/colorPrimaryDark"
         app:menu="@menu/navigation" />
 
 </LinearLayout>

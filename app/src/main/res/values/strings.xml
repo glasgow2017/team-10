@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Who Dares Cares</string>
-    <string name="title_home">Profile</string>
+    <string name="title_profile">Profile</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Help</string>
+    <string name="title_settings">Settings</string>
 </resources>
