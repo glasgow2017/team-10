@@ -4,9 +4,8 @@
     <item android:drawable="@color/colorPrimary" />
 
     <item>
-        <bitmap android:src="@drawable/whodarescares"
+        <bitmap android:src="@drawable/whodarescares_nobackground"
             android:gravity="center" />
-
     </item>
 
 </layer-list>
