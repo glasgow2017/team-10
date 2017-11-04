@@ -1,5 +1,4 @@
 
-
 // THIS CLASS SCORES RESPONDERS BASED ON HOW RELEVENT THEY ARE TO THE REQUEST AND THE USER
 
 public class ScoreResponder {
@@ -14,18 +13,18 @@ public class ScoreResponder {
 		responder = R;
 		client = C;
 		request = Rq;
-		
+
 		// If Responder is offline, they cannot be assigned to a request
-		if (responder.online == false){
+		if (responder.online == false) {
 			responderScore = -1;
-		}
-		else{
-		responderScore = (5 * serviceCategory()) + (2 * specialty()) + age() + gender();
+		} else {
+			responderScore = (5 * serviceCategory()) + (2 * specialty()) + age() + gender();
 		}
 		return responderScore;
 	}
 
-	// Compares the service category of the responder and the client and scores close matches highest
+	// Compares the service category of the responder and the client and scores
+	// close matches highest
 	// CHANGE LITERALLY ALL OF THIS TO TAKE DATA FROM THE DATABASE
 	private int serviceCategory() {
 		int count = 0;

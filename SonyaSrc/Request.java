@@ -1,6 +1,8 @@
+import java.util.Date;
 
 public class Request {
 	int timescale;
+	Date dateAdded;
 	String responderID;
 	String user;
 	boolean mentalHealth;
