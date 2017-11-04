@@ -14,16 +14,77 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/message"
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="@string/title_home" />
+            android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="228dp"
+                android:layout_height="202dp"
+                app:srcCompat="@drawable/whodarescares"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="189dp"
+                android:layout_marginLeft="100dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="110dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.407" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="174dp"
+                android:layout_height="142dp"
+                android:text="Hello, did you come here to speak to us about..."
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="36dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="156dp"
+                android:layout_height="67dp"
+                android:layout_marginLeft="8dp"
+                android:text="Yourself?"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.962" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="156dp"
+                android:layout_height="66dp"
+                android:layout_marginBottom="296dp"
+                android:layout_marginRight="8dp"
+                android:text="Someone Else?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.962" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="220dp"
+                android:layout_height="33dp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="14sp"
+                android:text="We're always here"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp" />
+        </android.support.constraint.ConstraintLayout>
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
