@@ -70,13 +70,157 @@
                 android:id="@+id/editText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
-                android:layout_marginLeft="16dp"
+                android:text="Age"
                 app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText"
+                android:layout_marginStart="16dp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="292dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="58dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="244dp"
+                android:text="Gender"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="189dp"
+                android:layout_marginStart="271dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:text="Service"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="182dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.029" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="107dp"
+                android:layout_height="51dp"
+                android:background="@color/colorPrimary"
+                android:text="SEND"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="84dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.96" />
+
+            <ScrollView
+                android:layout_width="201dp"
+                android:layout_height="230dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:addStatesFromChildren="true"
+                android:background="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton24"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="Army"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton23"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="RAF"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton22"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="Navy"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton21"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="NHS"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton20"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fire"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton19"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="Family"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton18"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark" />
+
+                </RadioGroup>
+            </ScrollView>
+
+            <RadioGroup
+                android:layout_width="126dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.561" />
 
         </android.support.constraint.ConstraintLayout>
     </FrameLayout>
