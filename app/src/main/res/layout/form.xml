@@ -140,7 +140,7 @@
                 android:layout_marginLeft="6dp"
                 android:layout_marginRight="8dp"
                 android:addStatesFromChildren="true"
-                android:background="@android:color/background_light"
+                android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.059"
                 app:layout_constraintLeft_toLeftOf="parent"

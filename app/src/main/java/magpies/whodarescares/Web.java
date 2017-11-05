@@ -1,21 +1,23 @@
 package magpies.whodarescares;
 
+/**
+ * Created by marcus on 05/11/17.
+ */
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.MainThread;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.webkit.WebSettings;
+import android.webkit.WebView;;
 
-public class MainActivity extends AppCompatActivity {
+public class Web extends AppCompatActivity {
 
-    private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_profile:
-                    mTextMessage.setText(R.string.title_profile);
+                    goToDashboard(); //FIXME
                     return true;
                 case R.id.navigation_dashboard:
                     goToDashboard();
@@ -62,13 +64,22 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        setContentView(R.layout.web);
+
+        WebView web = new WebView(this);
+
+        WebSettings webSettings = web.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        setContentView(web);
+        web = (WebView) findViewById(R.id.web);
+        web.loadUrl("http://www.bbc.co.uk");
     }
+
+
+
+
 
     public void goToForm(View view) {
         Intent intent = new Intent(this, Form.class);
@@ -84,10 +95,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Web.class);
         startActivity(intent);
     }
-
-
-
-
 
 
 }
