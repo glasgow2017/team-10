@@ -9,12 +9,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
-import android.webkit.WebView;;
+import android.webkit.WebView;
 
 public class Web extends AppCompatActivity {
 
@@ -26,7 +25,7 @@ public class Web extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_profile:
-                    goToDashboard(); //FIXME
+                    goToForm();
                     return true;
                 case R.id.navigation_dashboard:
                     goToDashboard();
@@ -72,16 +71,16 @@ public class Web extends AppCompatActivity {
 
         WebSettings webSettings = web.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        setContentView(web);
+        // setContentView(web);
         web = (WebView) findViewById(R.id.web);
-        web.loadUrl("http://www.bbc.co.uk");
+        web.loadUrl("http://52.214.188.159:3000/");
     }
 
 
 
 
 
-    public void goToForm(View view) {
+    public void goToForm() {
         Intent intent = new Intent(this, Form.class);
         startActivity(intent);
     }

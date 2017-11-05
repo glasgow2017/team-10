@@ -26,13 +26,13 @@ public class Form extends AppCompatActivity{
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_profile:
-                    mTextMessage.setText(R.string.title_profile);
+                    goToForm();
                     return true;
                 case R.id.navigation_dashboard:
                     goToDashboard();
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                    goToWeb();
                     return true;
             }
             return false;
@@ -72,8 +72,18 @@ public class Form extends AppCompatActivity{
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+    public void goToForm() {
+        Intent intent = new Intent(this, Form.class);
+        startActivity(intent);
+    }
+
     public void goToDashboard() {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToWeb() {
+        Intent intent = new Intent(this, Web.class);
         startActivity(intent);
     }
 

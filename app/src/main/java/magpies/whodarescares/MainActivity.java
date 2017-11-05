@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_profile:
-                    mTextMessage.setText(R.string.title_profile);
+                    goToForm(null);
                     return true;
                 case R.id.navigation_dashboard:
                     goToDashboard();
