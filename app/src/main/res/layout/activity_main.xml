@@ -8,6 +8,17 @@
     android:orientation="vertical"
     tools:context="magpies.whodarescares.MainActivity">
 
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="61dp"
+            android:layout_height="55dp"
+            android:visibility="visible"
+            android:layout_gravity="end"/>-->
+
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
@@ -15,7 +26,21 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:visibility="visible"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+
+        />
+
+    <!-- </FrameLayout>-->
+
+    <!--<view
+        class="android.support.v7.widget.ActionMenuPresenter.OverflowMenuButton"
+        id="@+id/view"
+        layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:visibility="visible" />-->
 
     <FrameLayout
         android:id="@+id/content"
@@ -107,9 +132,5 @@
         app:itemTextColor="@color/colorPrimaryDark"
         app:menu="@menu/navigation" />
 
-    <android.support.design.widget.NavigationView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        />
 
 </LinearLayout>
