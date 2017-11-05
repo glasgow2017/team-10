@@ -61,7 +61,7 @@
                 android:layout_marginTop="16dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Alias"
+                android:hint="Alias"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="16dp" />
@@ -74,7 +74,7 @@
                 android:layout_marginTop="12dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Age"
+                android:hint="Age"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText"
                 android:layout_marginStart="16dp" />
@@ -86,7 +86,7 @@
                 android:layout_marginLeft="25dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Location"
+                android:hint="Location"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginBottom="292dp"
@@ -96,13 +96,12 @@
                 android:id="@+id/textView3"
                 android:layout_width="58dp"
                 android:layout_height="29dp"
-                android:layout_marginLeft="244dp"
+                android:layout_marginLeft="264dp"
                 android:text="Gender"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                tools:layout_editor_absoluteY="189dp"
-                android:layout_marginStart="271dp" />
+                tools:layout_editor_absoluteY="182dp" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -123,17 +122,16 @@
                 android:id="@+id/button4"
                 android:layout_width="107dp"
                 android:layout_height="51dp"
+                android:layout_marginBottom="28dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
                 android:background="@color/colorPrimary"
                 android:text="SEND"
                 android:textColor="@android:color/background_light"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="84dp"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginEnd="16dp"
-                android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.909"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintHorizontal_bias="0.96" />
+                app:layout_constraintRight_toRightOf="parent" />
 
             <ScrollView
                 android:layout_width="201dp"
@@ -212,15 +210,37 @@
             </ScrollView>
 
             <RadioGroup
-                android:layout_width="126dp"
-                android:layout_height="65dp"
+                android:layout_width="137dp"
+                android:layout_height="121dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="28dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.561" />
+                app:layout_constraintVertical_bias="0.723">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Prefer not to say" />
+            </RadioGroup>
 
         </android.support.constraint.ConstraintLayout>
     </FrameLayout>
