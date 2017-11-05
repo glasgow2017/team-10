@@ -29,7 +29,7 @@ public class Form extends AppCompatActivity{
                     mTextMessage.setText(R.string.title_profile);
                     return true;
                 case R.id.navigation_dashboard:
-
+                    goToDashboard();
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
@@ -72,7 +72,7 @@ public class Form extends AppCompatActivity{
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
-    public void goToDashboard(View view) {
+    public void goToDashboard() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
